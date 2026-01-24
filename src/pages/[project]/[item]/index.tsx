@@ -198,7 +198,7 @@ export default function EntryPage() {
           </div>
         </CardContent>
         <CardFooter className="absolute bottom-0 flex gap-2">
-          {itemData?.tags.map((tag, index) => (
+          {(itemData?.tags??[]).map((tag, index) => (
             <TagCheckbox key={index}>{tag}</TagCheckbox>
           ))}
         </CardFooter>
